@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Cards from '../components/Card';
+import Card from '../components/Card';
 import Buscador from '../components/Buscador';
 import Detalles from '../components/Detalles';
 

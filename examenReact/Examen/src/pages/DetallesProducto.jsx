@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Buscador from '../components/Buscador';
-import Cards from '../components/Cards';
+import Card from '../components/Card';
 import Detalles from '../components/Detalles';
 
 const DetallesProducto = () => {
@@ -32,7 +32,7 @@ const DetallesProducto = () => {
             <Buscador cambiar={(word) => cambiar(word)} />
             <div className='flex'>
                 <div className='grid grid-cols-4 gap-4 w-[900px] mx-auto'>
-                    <Cards productos={productos} palabra={palabra} mostrar={(details) => mostrar(details)} categoria={categoria}/>
+                    <Card productos={productos} palabra={palabra} mostrar={(details) => mostrar(details)} categoria={categoria}/>
                 </div>
                 <div className='mx-auto'>
                     {
